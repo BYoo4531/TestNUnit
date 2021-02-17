@@ -1,0 +1,7 @@
+D:\PROG2070\BYAssignment2\BYAssignment2\bin\Debug\BYAssignment2.exe.config
+D:\PROG2070\BYAssignment2\BYAssignment2\bin\Debug\BYAssignment2.exe
+D:\PROG2070\BYAssignment2\BYAssignment2\bin\Debug\BYAssignment2.pdb
+D:\PROG2070\BYAssignment2\BYAssignment2\obj\Debug\BYAssignment2.csprojAssemblyReference.cache
+D:\PROG2070\BYAssignment2\BYAssignment2\obj\Debug\BYAssignment2.csproj.CoreCompileInputs.cache
+D:\PROG2070\BYAssignment2\BYAssignment2\obj\Debug\BYAssignment2.exe
+D:\PROG2070\BYAssignment2\BYAssignment2\obj\Debug\BYAssignment2.pdb
