@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BYAssignment2
 {
-    class Rectangle
+    public class Rectangle
     {
         private int length;
         private int width;
@@ -48,7 +48,12 @@ namespace BYAssignment2
         /// <param name="length"></param>
         public void SetLength(int length)
         {
-            this.length = length;
+            if (length > 0) {
+                this.length = length;
+            } else
+            {
+                throw new ArgumentOutOfRangeException("The length must be greater than 0.");
+            }
         }
 
         /// <summary>
@@ -66,7 +71,13 @@ namespace BYAssignment2
         /// <param name="width"></param>
         public void SetWidth(int width)
         {
-            this.width = width;
+            if (width > 0)
+            {
+                this.width = width;
+            } else
+            {
+                throw new ArgumentOutOfRangeException("The width must be greater than 0");
+            }
         }
 
         /// <summary>
@@ -75,7 +86,13 @@ namespace BYAssignment2
         /// <returns>rectangle's perimeter</returns>
         public int GetPerimeter()
         {
-            return (2 * (length + width));
+            try
+            {
+                return checked((2 * (length + width)));
+            } catch (OverflowException e)
+            {
+                throw new OverflowException("The result value is overflowed.");
+            }
         }
 
         /// <summary>
@@ -84,7 +101,15 @@ namespace BYAssignment2
         /// <returns>rectangle's area</returns>
         public int GetArea()
         {
-            return (length * width);
+            try
+            {
+                return checked((length * width));
+            } catch (OverflowException e)
+            {
+                Console.WriteLine(e.Message);
+                throw new OverflowException("The result value is overflowed.");
+            }
+            
         }
 
     }
